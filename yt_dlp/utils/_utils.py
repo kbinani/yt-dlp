@@ -3255,7 +3255,7 @@ def match_filter_func(filters, breaking_filters=None):
         else:
             video_title = info_dict.get('title') or info_dict.get('id') or 'entry'
             filter_str = ') | ('.join(map(str.strip, filters))
-            return f'{video_title} does not pass filter ({filter_str}), skipping ..'
+            return f'{video_title} does not pass filter, skipping ..'
     return _match_func
 
 
